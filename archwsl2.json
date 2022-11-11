@@ -5,8 +5,8 @@
     "homepage": "https://github.com/whurt4C/ArchWSL2",
     "license": "MIT",
     "notes": "Even when you are logging in as 'root', some operations (like service command) require Windows administrator privileges",
-    "url": "https://github.com/whurt4C/ArchWSL2/releases/download/20220822/ArchWSL2.zip",
-    "hash": "a56ea7aed2e4ee7870c60d365cf997cf1baa90929fc3a3951871b167c3a59738",
+    "url": "https://github.com/whurt4C/ArchWSL2/releases/download/20221111/ArchWSL2.zip",
+    "hash": "7d9232f71b70f2ae4170fa6c7cd82324e77ce26e88ab8538b6c6f6efb47866c5",
     "post_install": [
         "$installable = $true",
         "if ($null -eq (Get-Command 'wslconfig' -ErrorAction SilentlyContinue)) {",
@@ -46,6 +46,6 @@
     "persist": "data",
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/whurt4C/ArchWSL2/releases/download/$version/Arch.zip"
+        "url": "https://github.com/whurt4C/ArchWSL2/releases/download/$version/ArchWSL2.zip"
     }
 }
